@@ -7,4 +7,4 @@ test:
 production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: contact-list_production
+  channel_prefix: contact_list_production
