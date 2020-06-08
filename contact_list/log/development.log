@@ -3840,3 +3840,168 @@ ActionView::Template::Error (undefined local variable or method `cadastro_path' 
     9: </div>
   
 app/views/static_pages/index.html.erb:7:in `_app_views_static_pages_index_html_erb__1479120572892792953_70198626656000'
+Started GET "/" for ::1 at 2020-06-08 16:13:46 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/fao/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.html.erb (131.9ms)
+Completed 500 Internal Server Error in 417ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x0000564e5d897f68>:0x0000564e5d8a5a28>):
+    14:   <!-- Conteudo exibido em telas maiores e que serao escondidos em telas menores -->
+    15:   <div class="collapse navbar-collapse" id="expanded-menu">
+    16:     <ul class="nav navbar-nav">
+    17:       <% if !user_signed_in? %>
+    18:         <li class="active">
+    19:           <%= link_to 'Nova Conta', cadastro_path %>
+    20:         </li>
+  
+app/views/layouts/_header.html.erb:17:in `_app_views_layouts__header_html_erb___2883482569522265833_69946372299600'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___866914359878031759_47447288610980'
+Started GET "/" for ::1 at 2020-06-08 16:14:20 -0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (112.1ms)
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x00007f3b5203b2d8>:0x00007f3b52039988>):
+    14:   <!-- Conteudo exibido em telas maiores e que serao escondidos em telas menores -->
+    15:   <div class="collapse navbar-collapse" id="expanded-menu">
+    16:     <ul class="nav navbar-nav">
+    17:       <% if !user_signed_in? %>
+    18:         <li class="active">
+    19:           <%= link_to 'Nova Conta', cadastro_path %>
+    20:         </li>
+  
+app/views/layouts/_header.html.erb:17:in `_app_views_layouts__header_html_erb___2883482569522265833_69946429600320'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___866914359878031759_69946377809980'
+Started GET "/" for ::1 at 2020-06-08 16:14:24 -0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (114.2ms)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x00007f3b5203b2d8>:0x00007f3b52619f88>):
+    14:   <!-- Conteudo exibido em telas maiores e que serao escondidos em telas menores -->
+    15:   <div class="collapse navbar-collapse" id="expanded-menu">
+    16:     <ul class="nav navbar-nav">
+    17:       <% if !user_signed_in? %>
+    18:         <li class="active">
+    19:           <%= link_to 'Nova Conta', cadastro_path %>
+    20:         </li>
+  
+app/views/layouts/_header.html.erb:17:in `_app_views_layouts__header_html_erb___2883482569522265833_69946462494780'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___866914359878031759_69946380981380'
+Started GET "/" for ::1 at 2020-06-08 16:14:31 -0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (144.4ms)
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x00007f3b5203b2d8>:0x00007f3b52563648>):
+    14:   <!-- Conteudo exibido em telas maiores e que serao escondidos em telas menores -->
+    15:   <div class="collapse navbar-collapse" id="expanded-menu">
+    16:     <ul class="nav navbar-nav">
+    17:       <% if !user_signed_in? %>
+    18:         <li class="active">
+    19:           <%= link_to 'Nova Conta', cadastro_path %>
+    20:         </li>
+  
+app/views/layouts/_header.html.erb:17:in `_app_views_layouts__header_html_erb___2883482569522265833_69946470583500'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___866914359878031759_69946380533420'
+Started GET "/" for ::1 at 2020-06-08 16:16:27 -0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting end
+...rt alert-#{message_type} "alert-dismissible", role: 'alert' ...
+...                          ^~~~~
+/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+...ssage_type} "alert-dismissible", role: 'alert' do @output_bu...
+...                              ^
+/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting end
+    <button type="button" class="close" data-dismiss=...
+                  ^~~~~~
+/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting end
+...tton type="button" class="close" data-dismiss="alert" aria-l...
+...                          ^~~~~
+/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting end
+...ass="close" data-dismiss="alert" aria-label="Close">
+...                          ^~~~~
+/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:19: syntax error, unexpected tCONSTANT, expecting end
+...smiss="alert" aria-label="Close">
+...                          ^~~~~
+/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:20: syntax error, unexpected true, expecting end
+    <spam aria-hidden="true">&times;</spam>
+                       ^~~~
+/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:37: unterminated string meets end of file
+          end
+              ^
+/home/fao/rails/Contact_list/APP-one/contact_list/app/views/layouts/application.html.erb:37: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/layouts/application.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting end
+app/views/layouts/application.html.erb:19: syntax error, unexpected tCONSTANT, expecting end
+app/views/layouts/application.html.erb:20: syntax error, unexpected true, expecting end
+app/views/layouts/application.html.erb:37: unterminated string meets end of file
+app/views/layouts/application.html.erb:37: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2020-06-08 16:20:56 -0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (111.5ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x00007f3b5203b2d8>:0x00007f3b5c251b58>):
+    14:   <!-- Conteudo exibido em telas maiores e que serao escondidos em telas menores -->
+    15:   <div class="collapse navbar-collapse" id="expanded-menu">
+    16:     <ul class="nav navbar-nav">
+    17:       <% if !user_signed_in? %>
+    18:         <li class="active">
+    19:           <%= link_to 'Nova Conta', new_user_path %>
+    20:         </li>
+  
+app/views/layouts/_header.html.erb:17:in `_app_views_layouts__header_html_erb___2883482569522265833_69946475552420'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___866914359878031759_69946462950500'
+Started GET "/" for ::1 at 2020-06-08 16:27:24 -0300
+Processing by StaticPagesController#index as HTML
+  Rendering static_pages/index.html.erb within layouts/application
+  Rendered static_pages/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (106.1ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<#<Class:0x00007f3b5203b2d8>:0x00007f3b5083ce20>):
+    14:   <!-- Conteudo exibido em telas maiores e que serao escondidos em telas menores -->
+    15:   <div class="collapse navbar-collapse" id="expanded-menu">
+    16:     <ul class="nav navbar-nav">
+    17:       <% if !user_signed_in? %>
+    18:         <li class="active">
+    19:           <%= link_to 'Nova Conta', new_user_path %>
+    20:         </li>
+  
+app/views/layouts/_header.html.erb:17:in `_app_views_layouts__header_html_erb___2883482569522265833_69946379200020'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___866914359878031759_69946366557000'
